@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RAios-library' target in the 'RAios-library' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

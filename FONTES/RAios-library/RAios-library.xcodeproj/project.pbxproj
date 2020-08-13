@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		551018A61469FD9B00B2512B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551018A51469FD9B00B2512B /* Foundation.framework */; };
+		551018B21469FD9B00B2512B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551018A51469FD9B00B2512B /* Foundation.framework */; };
+		551018B41469FD9B00B2512B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551018B31469FD9B00B2512B /* CoreGraphics.framework */; };
+		551018B71469FD9C00B2512B /* libRAios-library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 551018A21469FD9B00B2512B /* libRAios-library.a */; };
+		551018BD1469FD9C00B2512B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 551018BB1469FD9C00B2512B /* InfoPlist.strings */; };
+		551018C01469FD9C00B2512B /* RAios_libraryTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 551018BF1469FD9C00B2512B /* RAios_libraryTests.h */; };
+		551018C21469FD9C00B2512B /* RAios_libraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 551018C11469FD9C00B2512B /* RAios_libraryTests.m */; };
+		551018D51469FE4500B2512B /* RAios.h in Headers */ = {isa = PBXBuildFile; fileRef = 551018D31469FE4500B2512B /* RAios.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551018D61469FE4500B2512B /* RAios.m in Sources */ = {isa = PBXBuildFile; fileRef = 551018D41469FE4500B2512B /* RAios.m */; };
+		551018DA1469FE7500B2512B /* RACameraView.h in Headers */ = {isa = PBXBuildFile; fileRef = 551018D81469FE7500B2512B /* RACameraView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551018DB1469FE7500B2512B /* RACameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 551018D91469FE7500B2512B /* RACameraView.m */; };
+		551018DF1469FE9100B2512B /* RAEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 551018DD1469FE9100B2512B /* RAEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551018E01469FE9100B2512B /* RAEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 551018DE1469FE9100B2512B /* RAEngine.m */; };
+		551018EA1469FEB300B2512B /* GLView.h in Headers */ = {isa = PBXBuildFile; fileRef = 551018E21469FEB300B2512B /* GLView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551018EB1469FEB300B2512B /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 551018E31469FEB300B2512B /* GLView.m */; };
+		551018EC1469FEB300B2512B /* GLRenderEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 551018E41469FEB300B2512B /* GLRenderEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551018ED1469FEB300B2512B /* GLRenderEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 551018E51469FEB300B2512B /* GLRenderEngine.mm */; };
+		551018EE1469FEB300B2512B /* GLTextRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 551018E61469FEB300B2512B /* GLTextRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551018EF1469FEB300B2512B /* GLTextRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 551018E71469FEB300B2512B /* GLTextRenderer.m */; };
+		551018F01469FEB300B2512B /* GLTextura.h in Headers */ = {isa = PBXBuildFile; fileRef = 551018E81469FEB300B2512B /* GLTextura.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551018F11469FEB300B2512B /* GLTextura.m in Sources */ = {isa = PBXBuildFile; fileRef = 551018E91469FEB300B2512B /* GLTextura.m */; };
+		551018F71469FECD00B2512B /* SetaDraw.mm in Sources */ = {isa = PBXBuildFile; fileRef = 551018F31469FECD00B2512B /* SetaDraw.mm */; };
+		551018F81469FECD00B2512B /* SetaDraw.h in Headers */ = {isa = PBXBuildFile; fileRef = 551018F41469FECD00B2512B /* SetaDraw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551018F91469FECD00B2512B /* PainelDraw.h in Headers */ = {isa = PBXBuildFile; fileRef = 551018F51469FECD00B2512B /* PainelDraw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551018FA1469FECD00B2512B /* PainelDraw.mm in Sources */ = {isa = PBXBuildFile; fileRef = 551018F61469FECD00B2512B /* PainelDraw.mm */; };
+		551018FF1469FEED00B2512B /* GLESComum.h in Headers */ = {isa = PBXBuildFile; fileRef = 551018FC1469FEED00B2512B /* GLESComum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551019001469FEED00B2512B /* glu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 551018FD1469FEED00B2512B /* glu.cpp */; };
+		551019011469FEED00B2512B /* glu.h in Headers */ = {isa = PBXBuildFile; fileRef = 551018FE1469FEED00B2512B /* glu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551019071469FF3D00B2512B /* PontoInteresse.h in Headers */ = {isa = PBXBuildFile; fileRef = 551019031469FF3D00B2512B /* PontoInteresse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551019081469FF3D00B2512B /* PontoInteresse.m in Sources */ = {isa = PBXBuildFile; fileRef = 551019041469FF3D00B2512B /* PontoInteresse.m */; };
+		551019091469FF3D00B2512B /* Objeto.h in Headers */ = {isa = PBXBuildFile; fileRef = 551019051469FF3D00B2512B /* Objeto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5510190A1469FF3D00B2512B /* Objeto.m in Sources */ = {isa = PBXBuildFile; fileRef = 551019061469FF3D00B2512B /* Objeto.m */; };
+		5510190E146A00EB00B2512B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5510190D146A00EB00B2512B /* CoreMotion.framework */; };
+		55101910146A00F400B2512B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5510190F146A00F400B2512B /* CoreLocation.framework */; };
+		55101912146A013800B2512B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55101911146A013800B2512B /* QuartzCore.framework */; };
+		55101914146A015600B2512B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55101913146A015600B2512B /* CoreMedia.framework */; };
+		55101916146A015C00B2512B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55101915146A015C00B2512B /* CoreGraphics.framework */; };
+		55101918146A017C00B2512B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55101917146A017C00B2512B /* AVFoundation.framework */; };
+		5510191A146A01B100B2512B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55101919146A01B100B2512B /* CoreVideo.framework */; };
+		5510191C146A01B700B2512B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5510191B146A01B700B2512B /* OpenGLES.framework */; };
+		5510191E146A021000B2512B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5510191D146A021000B2512B /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		551018B51469FD9C00B2512B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 551018991469FD9B00B2512B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 551018A11469FD9B00B2512B;
+			remoteInfo = "RAios-library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		551018A21469FD9B00B2512B /* libRAios-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libRAios-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		551018A51469FD9B00B2512B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		551018A91469FD9B00B2512B /* RAios-library-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RAios-library-Prefix.pch"; sourceTree = "<group>"; };
+		551018AF1469FD9B00B2512B /* RAios-libraryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RAios-libraryTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		551018B31469FD9B00B2512B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		551018BA1469FD9C00B2512B /* RAios-libraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RAios-libraryTests-Info.plist"; sourceTree = "<group>"; };
+		551018BC1469FD9C00B2512B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		551018BE1469FD9C00B2512B /* RAios-libraryTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RAios-libraryTests-Prefix.pch"; sourceTree = "<group>"; };
+		551018BF1469FD9C00B2512B /* RAios_libraryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAios_libraryTests.h; sourceTree = "<group>"; };
+		551018C11469FD9C00B2512B /* RAios_libraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAios_libraryTests.m; sourceTree = "<group>"; };
+		551018D31469FE4500B2512B /* RAios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAios.h; sourceTree = "<group>"; };
+		551018D41469FE4500B2512B /* RAios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAios.m; sourceTree = "<group>"; };
+		551018D81469FE7500B2512B /* RACameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACameraView.h; sourceTree = "<group>"; };
+		551018D91469FE7500B2512B /* RACameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACameraView.m; sourceTree = "<group>"; };
+		551018DD1469FE9100B2512B /* RAEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAEngine.h; sourceTree = "<group>"; };
+		551018DE1469FE9100B2512B /* RAEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAEngine.m; sourceTree = "<group>"; };
+		551018E21469FEB300B2512B /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		551018E31469FEB300B2512B /* GLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
+		551018E41469FEB300B2512B /* GLRenderEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRenderEngine.h; sourceTree = "<group>"; };
+		551018E51469FEB300B2512B /* GLRenderEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLRenderEngine.mm; sourceTree = "<group>"; };
+		551018E61469FEB300B2512B /* GLTextRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTextRenderer.h; sourceTree = "<group>"; };
+		551018E71469FEB300B2512B /* GLTextRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTextRenderer.m; sourceTree = "<group>"; };
+		551018E81469FEB300B2512B /* GLTextura.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTextura.h; sourceTree = "<group>"; };
+		551018E91469FEB300B2512B /* GLTextura.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTextura.m; sourceTree = "<group>"; };
+		551018F31469FECD00B2512B /* SetaDraw.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SetaDraw.mm; sourceTree = "<group>"; };
+		551018F41469FECD00B2512B /* SetaDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetaDraw.h; sourceTree = "<group>"; };
+		551018F51469FECD00B2512B /* PainelDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PainelDraw.h; sourceTree = "<group>"; };
+		551018F61469FECD00B2512B /* PainelDraw.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PainelDraw.mm; sourceTree = "<group>"; };
+		551018FC1469FEED00B2512B /* GLESComum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESComum.h; sourceTree = "<group>"; };
+		551018FD1469FEED00B2512B /* glu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glu.cpp; sourceTree = "<group>"; };
+		551018FE1469FEED00B2512B /* glu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glu.h; sourceTree = "<group>"; };
+		551019031469FF3D00B2512B /* PontoInteresse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PontoInteresse.h; sourceTree = "<group>"; };
+		551019041469FF3D00B2512B /* PontoInteresse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PontoInteresse.m; sourceTree = "<group>"; };
+		551019051469FF3D00B2512B /* Objeto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objeto.h; sourceTree = "<group>"; };
+		551019061469FF3D00B2512B /* Objeto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objeto.m; sourceTree = "<group>"; };
+		5510190D146A00EB00B2512B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		5510190F146A00F400B2512B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		55101911146A013800B2512B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		55101913146A015600B2512B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		55101915146A015C00B2512B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		55101917146A017C00B2512B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		55101919146A01B100B2512B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5510191B146A01B700B2512B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5510191D146A021000B2512B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5510189F1469FD9B00B2512B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5510191E146A021000B2512B /* UIKit.framework in Frameworks */,
+				5510191C146A01B700B2512B /* OpenGLES.framework in Frameworks */,
+				5510191A146A01B100B2512B /* CoreVideo.framework in Frameworks */,
+				55101918146A017C00B2512B /* AVFoundation.framework in Frameworks */,
+				55101916146A015C00B2512B /* CoreGraphics.framework in Frameworks */,
+				55101914146A015600B2512B /* CoreMedia.framework in Frameworks */,
+				55101912146A013800B2512B /* QuartzCore.framework in Frameworks */,
+				55101910146A00F400B2512B /* CoreLocation.framework in Frameworks */,
+				5510190E146A00EB00B2512B /* CoreMotion.framework in Frameworks */,
+				551018A61469FD9B00B2512B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		551018AB1469FD9B00B2512B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551018B21469FD9B00B2512B /* Foundation.framework in Frameworks */,
+				551018B41469FD9B00B2512B /* CoreGraphics.framework in Frameworks */,
+				551018B71469FD9C00B2512B /* libRAios-library.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		551018971469FD9B00B2512B = {
+			isa = PBXGroup;
+			children = (
+				551018A71469FD9B00B2512B /* RAios-library */,
+				551018B81469FD9C00B2512B /* RAios-libraryTests */,
+				551018A41469FD9B00B2512B /* Frameworks */,
+				551018A31469FD9B00B2512B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		551018A31469FD9B00B2512B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				551018A21469FD9B00B2512B /* libRAios-library.a */,
+				551018AF1469FD9B00B2512B /* RAios-libraryTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		551018A41469FD9B00B2512B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5510191D146A021000B2512B /* UIKit.framework */,
+				5510191B146A01B700B2512B /* OpenGLES.framework */,
+				55101919146A01B100B2512B /* CoreVideo.framework */,
+				55101917146A017C00B2512B /* AVFoundation.framework */,
+				55101915146A015C00B2512B /* CoreGraphics.framework */,
+				55101913146A015600B2512B /* CoreMedia.framework */,
+				55101911146A013800B2512B /* QuartzCore.framework */,
+				5510190F146A00F400B2512B /* CoreLocation.framework */,
+				5510190D146A00EB00B2512B /* CoreMotion.framework */,
+				551018A51469FD9B00B2512B /* Foundation.framework */,
+				551018B31469FD9B00B2512B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		551018A71469FD9B00B2512B /* RAios-library */ = {
+			isa = PBXGroup;
+			children = (
+				551019021469FF2600B2512B /* PontoInteresse */,
+				551018E11469FEA000B2512B /* OpenGLES */,
+				551018DC1469FE8100B2512B /* Core */,
+				551018D71469FE5F00B2512B /* Camera */,
+				551018D31469FE4500B2512B /* RAios.h */,
+				551018D41469FE4500B2512B /* RAios.m */,
+				551018A81469FD9B00B2512B /* Supporting Files */,
+			);
+			path = "RAios-library";
+			sourceTree = "<group>";
+		};
+		551018A81469FD9B00B2512B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				551018A91469FD9B00B2512B /* RAios-library-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		551018B81469FD9C00B2512B /* RAios-libraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				551018BF1469FD9C00B2512B /* RAios_libraryTests.h */,
+				551018C11469FD9C00B2512B /* RAios_libraryTests.m */,
+				551018B91469FD9C00B2512B /* Supporting Files */,
+			);
+			path = "RAios-libraryTests";
+			sourceTree = "<group>";
+		};
+		551018B91469FD9C00B2512B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				551018BA1469FD9C00B2512B /* RAios-libraryTests-Info.plist */,
+				551018BB1469FD9C00B2512B /* InfoPlist.strings */,
+				551018BE1469FD9C00B2512B /* RAios-libraryTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		551018D71469FE5F00B2512B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				551018D81469FE7500B2512B /* RACameraView.h */,
+				551018D91469FE7500B2512B /* RACameraView.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		551018DC1469FE8100B2512B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				551018DD1469FE9100B2512B /* RAEngine.h */,
+				551018DE1469FE9100B2512B /* RAEngine.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		551018E11469FEA000B2512B /* OpenGLES */ = {
+			isa = PBXGroup;
+			children = (
+				551018FB1469FEDD00B2512B /* Utils */,
+				551018F21469FEBF00B2512B /* Objetos */,
+				551018E21469FEB300B2512B /* GLView.h */,
+				551018E31469FEB300B2512B /* GLView.m */,
+				551018E41469FEB300B2512B /* GLRenderEngine.h */,
+				551018E51469FEB300B2512B /* GLRenderEngine.mm */,
+				551018E61469FEB300B2512B /* GLTextRenderer.h */,
+				551018E71469FEB300B2512B /* GLTextRenderer.m */,
+				551018E81469FEB300B2512B /* GLTextura.h */,
+				551018E91469FEB300B2512B /* GLTextura.m */,
+			);
+			name = OpenGLES;
+			sourceTree = "<group>";
+		};
+		551018F21469FEBF00B2512B /* Objetos */ = {
+			isa = PBXGroup;
+			children = (
+				551018F31469FECD00B2512B /* SetaDraw.mm */,
+				551018F41469FECD00B2512B /* SetaDraw.h */,
+				551018F51469FECD00B2512B /* PainelDraw.h */,
+				551018F61469FECD00B2512B /* PainelDraw.mm */,
+			);
+			name = Objetos;
+			sourceTree = "<group>";
+		};
+		551018FB1469FEDD00B2512B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				551018FC1469FEED00B2512B /* GLESComum.h */,
+				551018FD1469FEED00B2512B /* glu.cpp */,
+				551018FE1469FEED00B2512B /* glu.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		551019021469FF2600B2512B /* PontoInteresse */ = {
+			isa = PBXGroup;
+			children = (
+				551019031469FF3D00B2512B /* PontoInteresse.h */,
+				551019041469FF3D00B2512B /* PontoInteresse.m */,
+				551019051469FF3D00B2512B /* Objeto.h */,
+				551019061469FF3D00B2512B /* Objeto.m */,
+			);
+			name = PontoInteresse;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		551018A01469FD9B00B2512B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551018D51469FE4500B2512B /* RAios.h in Headers */,
+				551018DA1469FE7500B2512B /* RACameraView.h in Headers */,
+				551018DF1469FE9100B2512B /* RAEngine.h in Headers */,
+				551018EA1469FEB300B2512B /* GLView.h in Headers */,
+				551018EC1469FEB300B2512B /* GLRenderEngine.h in Headers */,
+				551018EE1469FEB300B2512B /* GLTextRenderer.h in Headers */,
+				551018F01469FEB300B2512B /* GLTextura.h in Headers */,
+				551018F81469FECD00B2512B /* SetaDraw.h in Headers */,
+				551018F91469FECD00B2512B /* PainelDraw.h in Headers */,
+				551018FF1469FEED00B2512B /* GLESComum.h in Headers */,
+				551019011469FEED00B2512B /* glu.h in Headers */,
+				551019071469FF3D00B2512B /* PontoInteresse.h in Headers */,
+				551019091469FF3D00B2512B /* Objeto.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		551018A11469FD9B00B2512B /* RAios-library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 551018C51469FD9C00B2512B /* Build configuration list for PBXNativeTarget "RAios-library" */;
+			buildPhases = (
+				5510189E1469FD9B00B2512B /* Sources */,
+				5510189F1469FD9B00B2512B /* Frameworks */,
+				551018A01469FD9B00B2512B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RAios-library";
+			productName = "RAios-library";
+			productReference = 551018A21469FD9B00B2512B /* libRAios-library.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		551018AE1469FD9B00B2512B /* RAios-libraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 551018C81469FD9C00B2512B /* Build configuration list for PBXNativeTarget "RAios-libraryTests" */;
+			buildPhases = (
+				551018AA1469FD9B00B2512B /* Sources */,
+				551018AB1469FD9B00B2512B /* Frameworks */,
+				551018AC1469FD9B00B2512B /* Resources */,
+				551018AD1469FD9B00B2512B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				551018B61469FD9C00B2512B /* PBXTargetDependency */,
+			);
+			name = "RAios-libraryTests";
+			productName = "RAios-libraryTests";
+			productReference = 551018AF1469FD9B00B2512B /* RAios-libraryTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		551018991469FD9B00B2512B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = FURB;
+			};
+			buildConfigurationList = 5510189C1469FD9B00B2512B /* Build configuration list for PBXProject "RAios-library" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 551018971469FD9B00B2512B;
+			productRefGroup = 551018A31469FD9B00B2512B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				551018A11469FD9B00B2512B /* RAios-library */,
+				551018AE1469FD9B00B2512B /* RAios-libraryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		551018AC1469FD9B00B2512B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551018BD1469FD9C00B2512B /* InfoPlist.strings in Resources */,
+				551018C01469FD9C00B2512B /* RAios_libraryTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		551018AD1469FD9B00B2512B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5510189E1469FD9B00B2512B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551018D61469FE4500B2512B /* RAios.m in Sources */,
+				551018DB1469FE7500B2512B /* RACameraView.m in Sources */,
+				551018E01469FE9100B2512B /* RAEngine.m in Sources */,
+				551018EB1469FEB300B2512B /* GLView.m in Sources */,
+				551018ED1469FEB300B2512B /* GLRenderEngine.mm in Sources */,
+				551018EF1469FEB300B2512B /* GLTextRenderer.m in Sources */,
+				551018F11469FEB300B2512B /* GLTextura.m in Sources */,
+				551018F71469FECD00B2512B /* SetaDraw.mm in Sources */,
+				551018FA1469FECD00B2512B /* PainelDraw.mm in Sources */,
+				551019001469FEED00B2512B /* glu.cpp in Sources */,
+				551019081469FF3D00B2512B /* PontoInteresse.m in Sources */,
+				5510190A1469FF3D00B2512B /* Objeto.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		551018AA1469FD9B00B2512B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551018C21469FD9C00B2512B /* RAios_libraryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		551018B61469FD9C00B2512B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 551018A11469FD9B00B2512B /* RAios-library */;
+			targetProxy = 551018B51469FD9C00B2512B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		551018BB1469FD9C00B2512B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				551018BC1469FD9C00B2512B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		551018C31469FD9C00B2512B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		551018C41469FD9C00B2512B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		551018C61469FD9C00B2512B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/RAios_library.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAios-library/RAios-library-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		551018C71469FD9C00B2512B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/RAios_library.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAios-library/RAios-library-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+		551018C91469FD9C00B2512B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAios-libraryTests/RAios-libraryTests-Prefix.pch";
+				INFOPLIST_FILE = "RAios-libraryTests/RAios-libraryTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		551018CA1469FD9C00B2512B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAios-libraryTests/RAios-libraryTests-Prefix.pch";
+				INFOPLIST_FILE = "RAios-libraryTests/RAios-libraryTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5510189C1469FD9B00B2512B /* Build configuration list for PBXProject "RAios-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				551018C31469FD9C00B2512B /* Debug */,
+				551018C41469FD9C00B2512B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		551018C51469FD9C00B2512B /* Build configuration list for PBXNativeTarget "RAios-library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				551018C61469FD9C00B2512B /* Debug */,
+				551018C71469FD9C00B2512B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		551018C81469FD9C00B2512B /* Build configuration list for PBXNativeTarget "RAios-libraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				551018C91469FD9C00B2512B /* Debug */,
+				551018CA1469FD9C00B2512B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 551018991469FD9B00B2512B /* Project object */;
+}

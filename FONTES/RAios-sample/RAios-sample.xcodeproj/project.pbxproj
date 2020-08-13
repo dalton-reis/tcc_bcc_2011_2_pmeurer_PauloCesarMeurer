@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5502D1D414689FA8005B692A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D1D314689FA8005B692A /* UIKit.framework */; };
+		5502D1D614689FA8005B692A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D1D514689FA8005B692A /* Foundation.framework */; };
+		5502D1D814689FA8005B692A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D1D714689FA8005B692A /* CoreGraphics.framework */; };
+		5502D1DE14689FA8005B692A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5502D1DC14689FA8005B692A /* InfoPlist.strings */; };
+		5502D1E114689FA8005B692A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5502D1E014689FA8005B692A /* main.m */; };
+		5502D1E414689FA8005B692A /* RAios_sampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5502D1E314689FA8005B692A /* RAios_sampleAppDelegate.m */; };
+		5502D1E714689FA8005B692A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5502D1E514689FA8005B692A /* MainWindow.xib */; };
+		5502D1EA14689FA8005B692A /* RAios_sampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5502D1E914689FA8005B692A /* RAios_sampleViewController.m */; };
+		5502D1ED14689FA8005B692A /* RAios_sampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5502D1EB14689FA8005B692A /* RAios_sampleViewController.xib */; };
+		5502D1F414689FA8005B692A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D1D314689FA8005B692A /* UIKit.framework */; };
+		5502D1F514689FA8005B692A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D1D514689FA8005B692A /* Foundation.framework */; };
+		5502D1F614689FA8005B692A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D1D714689FA8005B692A /* CoreGraphics.framework */; };
+		5502D1FE14689FA8005B692A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5502D1FC14689FA8005B692A /* InfoPlist.strings */; };
+		5502D20114689FA8005B692A /* RAios_sampleTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 5502D20014689FA8005B692A /* RAios_sampleTests.h */; };
+		5502D20314689FA8005B692A /* RAios_sampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5502D20214689FA8005B692A /* RAios_sampleTests.m */; };
+		5502D21914689FFF005B692A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5502D21514689FFF005B692A /* icon.png */; };
+		5502D21A14689FFF005B692A /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 5502D21614689FFF005B692A /* exit.png */; };
+		5502D21B14689FFF005B692A /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 5502D21714689FFF005B692A /* back.png */; };
+		5502D21C14689FFF005B692A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5502D21814689FFF005B692A /* background.png */; };
+		5502D24F1468A109005B692A /* FerramentasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5502D24E1468A109005B692A /* FerramentasView.m */; };
+		5502D2551468A13B005B692A /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5502D2531468A13B005B692A /* ConfigViewController.m */; };
+		5502D2561468A13B005B692A /* ConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5502D2541468A13B005B692A /* ConfigViewController.xib */; };
+		5502D2581468A17A005B692A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D2571468A17A005B692A /* CoreMotion.framework */; };
+		5502D25A1468A184005B692A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D2591468A184005B692A /* CoreLocation.framework */; };
+		5502D25C1468A18E005B692A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D25B1468A18E005B692A /* QuartzCore.framework */; };
+		5502D25E1468A197005B692A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D25D1468A197005B692A /* OpenGLES.framework */; };
+		5502D2601468A19D005B692A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D25F1468A19D005B692A /* CoreVideo.framework */; };
+		5502D2621468A1A5005B692A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D2611468A1A5005B692A /* AVFoundation.framework */; };
+		5502D2651468A1B7005B692A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5502D2641468A1B7005B692A /* CoreMedia.framework */; };
+		55101935146A058400B2512B /* PontoInteresseSemText.m in Sources */ = {isa = PBXBuildFile; fileRef = 55101934146A058400B2512B /* PontoInteresseSemText.m */; };
+		5533D673146B4E4A0086F523 /* libRAios-library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5533D672146B4E4A0086F523 /* libRAios-library.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5502D1F714689FA8005B692A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5502D1C614689FA8005B692A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5502D1CE14689FA8005B692A;
+			remoteInfo = "RAios-sample";
+		};
+		5510198E146A199500B2512B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55101986146A199500B2512B /* RAios-library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 551018A21469FD9B00B2512B;
+			remoteInfo = "RAios-library";
+		};
+		55101990146A199500B2512B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55101986146A199500B2512B /* RAios-library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 551018AF1469FD9B00B2512B;
+			remoteInfo = "RAios-libraryTests";
+		};
+		5533D670146B4A5D0086F523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55101986146A199500B2512B /* RAios-library.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 551018A11469FD9B00B2512B;
+			remoteInfo = "RAios-library";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5502D1CF14689FA8005B692A /* RAios-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RAios-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5502D1D314689FA8005B692A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5502D1D514689FA8005B692A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5502D1D714689FA8005B692A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5502D1DB14689FA8005B692A /* RAios-sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RAios-sample-Info.plist"; sourceTree = "<group>"; };
+		5502D1DD14689FA8005B692A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5502D1DF14689FA8005B692A /* RAios-sample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RAios-sample-Prefix.pch"; sourceTree = "<group>"; };
+		5502D1E014689FA8005B692A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5502D1E214689FA8005B692A /* RAios_sampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAios_sampleAppDelegate.h; sourceTree = "<group>"; };
+		5502D1E314689FA8005B692A /* RAios_sampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAios_sampleAppDelegate.m; sourceTree = "<group>"; };
+		5502D1E614689FA8005B692A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5502D1E814689FA8005B692A /* RAios_sampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAios_sampleViewController.h; sourceTree = "<group>"; };
+		5502D1E914689FA8005B692A /* RAios_sampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAios_sampleViewController.m; sourceTree = "<group>"; };
+		5502D1EC14689FA8005B692A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RAios_sampleViewController.xib; sourceTree = "<group>"; };
+		5502D1F314689FA8005B692A /* RAios-sampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RAios-sampleTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5502D1FB14689FA8005B692A /* RAios-sampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RAios-sampleTests-Info.plist"; sourceTree = "<group>"; };
+		5502D1FD14689FA8005B692A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5502D1FF14689FA8005B692A /* RAios-sampleTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RAios-sampleTests-Prefix.pch"; sourceTree = "<group>"; };
+		5502D20014689FA8005B692A /* RAios_sampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAios_sampleTests.h; sourceTree = "<group>"; };
+		5502D20214689FA8005B692A /* RAios_sampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAios_sampleTests.m; sourceTree = "<group>"; };
+		5502D21514689FFF005B692A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		5502D21614689FFF005B692A /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit.png; sourceTree = "<group>"; };
+		5502D21714689FFF005B692A /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		5502D21814689FFF005B692A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		5502D24D1468A109005B692A /* FerramentasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FerramentasView.h; sourceTree = "<group>"; };
+		5502D24E1468A109005B692A /* FerramentasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FerramentasView.m; sourceTree = "<group>"; };
+		5502D2521468A13B005B692A /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		5502D2531468A13B005B692A /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		5502D2541468A13B005B692A /* ConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigViewController.xib; sourceTree = "<group>"; };
+		5502D2571468A17A005B692A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		5502D2591468A184005B692A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5502D25B1468A18E005B692A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5502D25D1468A197005B692A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5502D25F1468A19D005B692A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5502D2611468A1A5005B692A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5502D2631468A1AC005B692A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5502D2641468A1B7005B692A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		55101933146A058400B2512B /* PontoInteresseSemText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PontoInteresseSemText.h; sourceTree = "<group>"; };
+		55101934146A058400B2512B /* PontoInteresseSemText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PontoInteresseSemText.m; sourceTree = "<group>"; };
+		55101986146A199500B2512B /* RAios-library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "RAios-library.xcodeproj"; path = "../RAios-library/RAios-library.xcodeproj"; sourceTree = "<group>"; };
+		5533D672146B4E4A0086F523 /* libRAios-library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libRAios-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5502D1CC14689FA8005B692A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5533D673146B4E4A0086F523 /* libRAios-library.a in Frameworks */,
+				5502D2651468A1B7005B692A /* CoreMedia.framework in Frameworks */,
+				5502D1D814689FA8005B692A /* CoreGraphics.framework in Frameworks */,
+				5502D2621468A1A5005B692A /* AVFoundation.framework in Frameworks */,
+				5502D2601468A19D005B692A /* CoreVideo.framework in Frameworks */,
+				5502D25E1468A197005B692A /* OpenGLES.framework in Frameworks */,
+				5502D25C1468A18E005B692A /* QuartzCore.framework in Frameworks */,
+				5502D25A1468A184005B692A /* CoreLocation.framework in Frameworks */,
+				5502D2581468A17A005B692A /* CoreMotion.framework in Frameworks */,
+				5502D1D414689FA8005B692A /* UIKit.framework in Frameworks */,
+				5502D1D614689FA8005B692A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5502D1EF14689FA8005B692A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5502D1F414689FA8005B692A /* UIKit.framework in Frameworks */,
+				5502D1F514689FA8005B692A /* Foundation.framework in Frameworks */,
+				5502D1F614689FA8005B692A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5502D1C414689FA8005B692A = {
+			isa = PBXGroup;
+			children = (
+				55101986146A199500B2512B /* RAios-library.xcodeproj */,
+				55101962146A179D00B2512B /* Dependencias */,
+				5502D1D914689FA8005B692A /* RAios-sample */,
+				5502D1F914689FA8005B692A /* RAios-sampleTests */,
+				5502D1D214689FA8005B692A /* Frameworks */,
+				5502D1D014689FA8005B692A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5502D1D014689FA8005B692A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5502D1CF14689FA8005B692A /* RAios-sample.app */,
+				5502D1F314689FA8005B692A /* RAios-sampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5502D1D214689FA8005B692A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5533D672146B4E4A0086F523 /* libRAios-library.a */,
+				5502D2641468A1B7005B692A /* CoreMedia.framework */,
+				5502D2631468A1AC005B692A /* CoreGraphics.framework */,
+				5502D2611468A1A5005B692A /* AVFoundation.framework */,
+				5502D25F1468A19D005B692A /* CoreVideo.framework */,
+				5502D25D1468A197005B692A /* OpenGLES.framework */,
+				5502D25B1468A18E005B692A /* QuartzCore.framework */,
+				5502D2591468A184005B692A /* CoreLocation.framework */,
+				5502D2571468A17A005B692A /* CoreMotion.framework */,
+				5502D1D314689FA8005B692A /* UIKit.framework */,
+				5502D1D514689FA8005B692A /* Foundation.framework */,
+				5502D1D714689FA8005B692A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5502D1D914689FA8005B692A /* RAios-sample */ = {
+			isa = PBXGroup;
+			children = (
+				5510192A146A055700B2512B /* PontoInteresse */,
+				5502D2511468A124005B692A /* Configuracao */,
+				5502D24C1468A0F5005B692A /* Ferramentas */,
+				5502D20C14689FD7005B692A /* src */,
+				5502D1E214689FA8005B692A /* RAios_sampleAppDelegate.h */,
+				5502D1E314689FA8005B692A /* RAios_sampleAppDelegate.m */,
+				5502D1E514689FA8005B692A /* MainWindow.xib */,
+				5502D1E814689FA8005B692A /* RAios_sampleViewController.h */,
+				5502D1E914689FA8005B692A /* RAios_sampleViewController.m */,
+				5502D1EB14689FA8005B692A /* RAios_sampleViewController.xib */,
+				5502D1DA14689FA8005B692A /* Supporting Files */,
+			);
+			path = "RAios-sample";
+			sourceTree = "<group>";
+		};
+		5502D1DA14689FA8005B692A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5502D1DB14689FA8005B692A /* RAios-sample-Info.plist */,
+				5502D1DC14689FA8005B692A /* InfoPlist.strings */,
+				5502D1DF14689FA8005B692A /* RAios-sample-Prefix.pch */,
+				5502D1E014689FA8005B692A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5502D1F914689FA8005B692A /* RAios-sampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				5502D20014689FA8005B692A /* RAios_sampleTests.h */,
+				5502D20214689FA8005B692A /* RAios_sampleTests.m */,
+				5502D1FA14689FA8005B692A /* Supporting Files */,
+			);
+			path = "RAios-sampleTests";
+			sourceTree = "<group>";
+		};
+		5502D1FA14689FA8005B692A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5502D1FB14689FA8005B692A /* RAios-sampleTests-Info.plist */,
+				5502D1FC14689FA8005B692A /* InfoPlist.strings */,
+				5502D1FF14689FA8005B692A /* RAios-sampleTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5502D20C14689FD7005B692A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5502D21514689FFF005B692A /* icon.png */,
+				5502D21614689FFF005B692A /* exit.png */,
+				5502D21714689FFF005B692A /* back.png */,
+				5502D21814689FFF005B692A /* background.png */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		5502D24C1468A0F5005B692A /* Ferramentas */ = {
+			isa = PBXGroup;
+			children = (
+				5502D24D1468A109005B692A /* FerramentasView.h */,
+				5502D24E1468A109005B692A /* FerramentasView.m */,
+			);
+			name = Ferramentas;
+			sourceTree = "<group>";
+		};
+		5502D2511468A124005B692A /* Configuracao */ = {
+			isa = PBXGroup;
+			children = (
+				5502D2521468A13B005B692A /* ConfigViewController.h */,
+				5502D2531468A13B005B692A /* ConfigViewController.m */,
+				5502D2541468A13B005B692A /* ConfigViewController.xib */,
+			);
+			name = Configuracao;
+			sourceTree = "<group>";
+		};
+		5510192A146A055700B2512B /* PontoInteresse */ = {
+			isa = PBXGroup;
+			children = (
+				55101933146A058400B2512B /* PontoInteresseSemText.h */,
+				55101934146A058400B2512B /* PontoInteresseSemText.m */,
+			);
+			name = PontoInteresse;
+			sourceTree = "<group>";
+		};
+		55101962146A179D00B2512B /* Dependencias */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Dependencias;
+			sourceTree = "<group>";
+		};
+		55101987146A199500B2512B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5510198F146A199500B2512B /* libRAios-library.a */,
+				55101991146A199500B2512B /* RAios-libraryTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5502D1CE14689FA8005B692A /* RAios-sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5502D20614689FA8005B692A /* Build configuration list for PBXNativeTarget "RAios-sample" */;
+			buildPhases = (
+				5502D1CB14689FA8005B692A /* Sources */,
+				5502D1CC14689FA8005B692A /* Frameworks */,
+				5502D1CD14689FA8005B692A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5533D671146B4A5D0086F523 /* PBXTargetDependency */,
+			);
+			name = "RAios-sample";
+			productName = "RAios-sample";
+			productReference = 5502D1CF14689FA8005B692A /* RAios-sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5502D1F214689FA8005B692A /* RAios-sampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5502D20914689FA8005B692A /* Build configuration list for PBXNativeTarget "RAios-sampleTests" */;
+			buildPhases = (
+				5502D1EE14689FA8005B692A /* Sources */,
+				5502D1EF14689FA8005B692A /* Frameworks */,
+				5502D1F014689FA8005B692A /* Resources */,
+				5502D1F114689FA8005B692A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5502D1F814689FA8005B692A /* PBXTargetDependency */,
+			);
+			name = "RAios-sampleTests";
+			productName = "RAios-sampleTests";
+			productReference = 5502D1F314689FA8005B692A /* RAios-sampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5502D1C614689FA8005B692A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = FURB;
+			};
+			buildConfigurationList = 5502D1C914689FA8005B692A /* Build configuration list for PBXProject "RAios-sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5502D1C414689FA8005B692A;
+			productRefGroup = 5502D1D014689FA8005B692A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 55101987146A199500B2512B /* Products */;
+					ProjectRef = 55101986146A199500B2512B /* RAios-library.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5502D1CE14689FA8005B692A /* RAios-sample */,
+				5502D1F214689FA8005B692A /* RAios-sampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5510198F146A199500B2512B /* libRAios-library.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRAios-library.a";
+			remoteRef = 5510198E146A199500B2512B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55101991146A199500B2512B /* RAios-libraryTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RAios-libraryTests.octest";
+			remoteRef = 55101990146A199500B2512B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5502D1CD14689FA8005B692A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5502D1DE14689FA8005B692A /* InfoPlist.strings in Resources */,
+				5502D1E714689FA8005B692A /* MainWindow.xib in Resources */,
+				5502D1ED14689FA8005B692A /* RAios_sampleViewController.xib in Resources */,
+				5502D21914689FFF005B692A /* icon.png in Resources */,
+				5502D21A14689FFF005B692A /* exit.png in Resources */,
+				5502D21B14689FFF005B692A /* back.png in Resources */,
+				5502D21C14689FFF005B692A /* background.png in Resources */,
+				5502D2561468A13B005B692A /* ConfigViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5502D1F014689FA8005B692A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5502D1FE14689FA8005B692A /* InfoPlist.strings in Resources */,
+				5502D20114689FA8005B692A /* RAios_sampleTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5502D1F114689FA8005B692A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5502D1CB14689FA8005B692A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5502D1E114689FA8005B692A /* main.m in Sources */,
+				5502D1E414689FA8005B692A /* RAios_sampleAppDelegate.m in Sources */,
+				5502D1EA14689FA8005B692A /* RAios_sampleViewController.m in Sources */,
+				5502D24F1468A109005B692A /* FerramentasView.m in Sources */,
+				5502D2551468A13B005B692A /* ConfigViewController.m in Sources */,
+				55101935146A058400B2512B /* PontoInteresseSemText.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5502D1EE14689FA8005B692A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5502D20314689FA8005B692A /* RAios_sampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5502D1F814689FA8005B692A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5502D1CE14689FA8005B692A /* RAios-sample */;
+			targetProxy = 5502D1F714689FA8005B692A /* PBXContainerItemProxy */;
+		};
+		5533D671146B4A5D0086F523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RAios-library";
+			targetProxy = 5533D670146B4A5D0086F523 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5502D1DC14689FA8005B692A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5502D1DD14689FA8005B692A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5502D1E514689FA8005B692A /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5502D1E614689FA8005B692A /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		5502D1EB14689FA8005B692A /* RAios_sampleViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5502D1EC14689FA8005B692A /* en */,
+			);
+			name = RAios_sampleViewController.xib;
+			sourceTree = "<group>";
+		};
+		5502D1FC14689FA8005B692A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5502D1FD14689FA8005B692A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5502D20414689FA8005B692A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5502D20514689FA8005B692A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		5502D20714689FA8005B692A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAios-sample/RAios-sample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../RAios-library/RAios-library/**";
+				INFOPLIST_FILE = "RAios-sample/RAios-sample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/RAios-library-gwtpqmpmebgfhmbvpydkrjnacoip/Build/Products/Release-iphoneos\"",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5502D20814689FA8005B692A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAios-sample/RAios-sample-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../RAios-library/RAios-library/**";
+				INFOPLIST_FILE = "RAios-sample/RAios-sample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../../../Library/Developer/Xcode/DerivedData/RAios-library-gwtpqmpmebgfhmbvpydkrjnacoip/Build/Products/Release-iphoneos\"",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5502D20A14689FA8005B692A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RAios-sample.app/RAios-sample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAios-sampleTests/RAios-sampleTests-Prefix.pch";
+				INFOPLIST_FILE = "RAios-sampleTests/RAios-sampleTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5502D20B14689FA8005B692A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RAios-sample.app/RAios-sample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAios-sampleTests/RAios-sampleTests-Prefix.pch";
+				INFOPLIST_FILE = "RAios-sampleTests/RAios-sampleTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5502D1C914689FA8005B692A /* Build configuration list for PBXProject "RAios-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5502D20414689FA8005B692A /* Debug */,
+				5502D20514689FA8005B692A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5502D20614689FA8005B692A /* Build configuration list for PBXNativeTarget "RAios-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5502D20714689FA8005B692A /* Debug */,
+				5502D20814689FA8005B692A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5502D20914689FA8005B692A /* Build configuration list for PBXNativeTarget "RAios-sampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5502D20A14689FA8005B692A /* Debug */,
+				5502D20B14689FA8005B692A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5502D1C614689FA8005B692A /* Project object */;
+}

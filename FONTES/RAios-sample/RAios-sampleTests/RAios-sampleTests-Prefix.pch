@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RAios-sampleTests' target in the 'RAios-sampleTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
